@@ -49,8 +49,8 @@ tags = st.sidebar.empty()  # Create an empty placeholder in the sidebar
 tags = st_tags_sidebar(
     label='Enter Fields to Extract:',
     text='Press enter to add a field',
-    value=['Title', 'Number of Points', 'Creator', 'Time Posted', 'Number of Comments'],  # Default fields
-    suggestions=['Title', 'Number of Points', 'Creator', 'Time Posted', 'Number of Comments'],
+    value=['Title', 'Number of Points', 'Creator', 'Time Posted','Number of Places' , 'email', 'contact', 'Number of Comments'],
+    suggestions=['Title', 'Number of Points', 'Creator', 'Time Posted','Number of Places' , 'email', 'contact', 'Number of Comments'],
     maxtags=-1,  # Set to -1 for unlimited tags
     key='tags_input'
 )
