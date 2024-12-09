@@ -17,8 +17,8 @@ from scraper import (
 )
 
 # Initialize Streamlit app
-st.set_page_config(page_title="Universal Web Scraper", layout="wide")
-st.title("Universal Web Scraper 🦑")
+st.set_page_config(page_title="GPT Integrated Selenium Web Scraper", layout="wide")
+st.title("GPT Integrated Selenium Web Scraper 🦑")
 
 # Sidebar components
 st.sidebar.title("Web Scraper Settings")
