@@ -39,7 +39,7 @@ def setup_selenium():
                          "AppleWebKit/537.36 (KHTML, like Gecko) "
                          "Chrome/91.0.4472.124 Safari/537.36")
     # Specify the path to the ChromeDriver
-    service = Service('/Users/shadeer/Downloads/chromedriver-mac-arm64/chromedriver')  
+    service = Service('./chromedriver')  
     driver = webdriver.Chrome(service=service, options=options)
     return driver
 
