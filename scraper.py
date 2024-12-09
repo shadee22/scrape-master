@@ -18,6 +18,9 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
+import chromedriver_autoinstaller
+
+
 from openai import OpenAI
 
 # Removed load_dotenv() since API key will be passed directly
@@ -27,13 +30,15 @@ from openai import OpenAI
 
 # Set up the Chrome WebDriver options
 def setup_selenium():
+    chromedriver_autoinstaller.install()
+
     options = Options()
 
     # Adding arguments
     options.add_argument("--disable-gpu")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
-    
+    options.add_argument("--headless")
     # Randomize user-agent to mimic different users
     options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
                          "AppleWebKit/537.36 (KHTML, like Gecko) "
